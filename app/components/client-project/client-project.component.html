@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-header bg-success">
+        Client Project List
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Project Name</th>
+              <th>Client Name</th>
+              <th>Start Date</th>
+              <th>Expected End Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (project of clientProjectList; track $index) {
+            <tr>
+              <td>{{$index + 1}}</td>
+              <td>{{project.projectName}}</td>
+              <td>{{project.clientName}}</td>
+              <td>{{project.startDate}}</td>
+              <td>{{project.expectedEndDate}}</td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

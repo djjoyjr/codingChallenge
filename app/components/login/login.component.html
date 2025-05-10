@@ -1,0 +1,29 @@
+<div class="card">
+  <form role="form" name="login">
+    <div class="row">
+      <div class="col-1">
+        <label for="username">User</label>
+      </div>
+      <div class="col-6">
+        <select name="username" id="username" [(ngModel)]="userName" class="login-input" required>
+          <option [ngValue]="null">[Select User]</option>
+          <option value="ben">Ben</option>
+          <option value="chris">Chris</option>
+          <option value="dj">DJ</option>
+          <option value="victor">Victor</option>
+          <option value="winston">Winston</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <label for="password">Password</label>
+        </div>
+        <div class="col-6">
+          <input class="login-input" type="password" name="password" id="password" placeholder="Password" [(ngModel)]="password" required />
+          <button id="loginButton" name="loginButton" type="button" (click)="loginUser()" [disabled]="!isValidYn">Sign in</button>
+        </div>
+      </div>
+      <br>
+    </div>
+  </form>
+</div>
