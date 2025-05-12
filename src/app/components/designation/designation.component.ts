@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MainService } from '../../services/main.service';
-import { APIResponseModel, IDesignation } from '../../model/interface/role';
+import { APIResponseModel, IDesignation } from '../../model/interface/interfaces';
 
 @Component({
   selector: 'designation',

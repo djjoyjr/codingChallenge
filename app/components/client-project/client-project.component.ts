@@ -1,6 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { ClientService } from '../../services/client.service';
-import { APIResponseModel } from '../../model/interface/role';
+import { APIResponseModel } from '../../model/interface/interfaces';
 import { ClientProject } from '../../model/class/ClientProject';
 
 @Component({

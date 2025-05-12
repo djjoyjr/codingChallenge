@@ -1,6 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { APIResponseModel, IRole } from '../../model/interface/role';
+import { APIResponseModel, IRole } from '../../model/interface/interfaces';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -23,12 +23,7 @@ export class RolesComponent implements OnInit {
   }
 
   getAllRoles() {
-    //const headers = new HttpHeaders({
-    //  'Access-Control-Allow-Origin': '*'
-    //});
-/*    console.log("headers: ", headers);*/
     this.http.get<APIResponseModel>("/api/ClientStrive/GetAllRoles").subscribe((res: APIResponseModel) => {
-      console.log("res: ", res);
       this.roleList = res.data;
     })
   }

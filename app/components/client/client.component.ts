@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Client } from '../../model/class/Client';
 import { FormsModule } from '@angular/forms';
 import { ClientService } from '../../services/client.service';
-import { APIResponseModel } from '../../model/interface/role';
+import { APIResponseModel } from '../../model/interface/interfaces';
 
 
 @Component({
